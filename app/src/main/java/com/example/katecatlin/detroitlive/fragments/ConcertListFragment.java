@@ -25,11 +25,10 @@ public class ConcertListFragment extends ListFragment implements MasterApiReques
 
     public static final String FRAG_TAG = "ConcertListFragment";
 
-    @Bean
-    protected MasterRequest masterRequest;
+    protected MasterRequest masterRequest = new MasterRequest(this);
 
     @AfterViews
-    private void attachAdapter () {
+    public void attachAdapter () {
         concertListAdapter = new ConcertListAdapter(getActivity());
         setListAdapter(concertListAdapter);
         refreshConcerts();

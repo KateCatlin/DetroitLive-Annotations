@@ -12,7 +12,6 @@ import android.widget.Button;
 
 import com.example.katecatlin.detroitlive.R;
 import com.example.katecatlin.detroitlive.activities.ListActivity;
-import com.example.katecatlin.detroitlive.activities.NoInternetActivity_;
 
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.Click;

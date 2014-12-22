@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by katecatlin on 12/19/14.
  */
-@EBean
+
 public class MasterRequest implements IndividualApiRequestCallback {
 
     public static Integer apisReturned = 0;
@@ -31,7 +31,7 @@ public class MasterRequest implements IndividualApiRequestCallback {
     }
 
 
-    private MasterRequest(MasterApiRequestCallback masterAPIRequestCallback) {
+    public MasterRequest(MasterApiRequestCallback masterAPIRequestCallback) {
         thisMasterAPIRequestCallback = masterAPIRequestCallback;
     }
 
