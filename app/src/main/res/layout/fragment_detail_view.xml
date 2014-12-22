@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/detailArtistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:text="@string/Artist1"
+        android:textColor="@color/pink"
+        android:textSize="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/date_Row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailArtistTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/detailDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Date"
+            android:textColor="@color/cream"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/detailTimeTextView"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/detailDateTextView"
+            android:text="@string/Time"
+            android:textColor="@color/cream"
+            android:textSize="25dp"
+            />
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detailVenueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_Row"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/Venue"
+        android:textColor="@color/dark_pink"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/detailAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailVenueTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Address"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/address_Row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detailAddressTextView"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/detailCityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/City"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:id="@+id/detailZipCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/detailCityTextView"
+            android:text="@string/ZipCode"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detailUrlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/address_Row"
+        android:text="@string/VenueURL"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:autoLink="web"
+        />
+
+    <TextView
+        android:id="@+id/featuringTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailUrlTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/Featuring_Title"
+        android:textColor="@color/dark_pink"
+        android:textSize="30dp"
+        />
+
+        <TextView
+            android:id="@+id/detailArtist2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/featuringTextView"
+            android:paddingRight="30dp"
+            android:text="@string/Artist2"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/detailArtist3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/detailArtist2TextView"
+            android:text="@string/Artist3"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            />
+
+    <Button
+        android:id="@+id/Ticket_Button"
+        android:background="@color/teal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detailArtist3TextView"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="@string/Ticket_Title"
+        android:textColor="@color/cream"
+        android:textSize="30dp"
+        />
+
+
+</RelativeLayout>
+
+</ScrollView>

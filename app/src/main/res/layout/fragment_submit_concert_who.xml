@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:background="@color/light_black"
+    tools:context=".CreateLunchFragment">
+
+    <!--Why is this so ugly? -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Share_Title"
+        android:id="@+id/textview_share_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/pink"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/textview_artist_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_share_title"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Artist_Submit"
+        android:textStyle="bold"
+        android:textColor="@color/dark_pink"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/edit_artist_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textview_artist_submit"
+        android:layout_marginBottom="5dp"
+        android:inputType="textCapWords"
+        android:background="@color/cream"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/textview_artist_2_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_artist_1"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Artist_2_Submit"
+        android:textStyle="bold"
+        android:textColor="@color/dark_pink"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edit_artist_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textview_artist_2_submit"
+        android:layout_marginBottom="5dp"
+        android:inputType="textCapWords"
+        android:background="@color/cream"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/textview_artist_3_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_artist_2"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Artist_3_Submit"
+        android:textStyle="bold"
+        android:textColor="@color/dark_pink"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edit_artist_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textview_artist_3_submit"
+        android:layout_marginBottom="5dp"
+        android:inputType="textCapWords"
+        android:background="@color/cream"
+        android:singleLine="true"/>
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/arrow_right"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        />
+
+</RelativeLayout>

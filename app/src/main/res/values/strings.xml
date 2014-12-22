@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DetroitLive</string>
+    <string name="action_settings">Settings</string>
+    <string name="Heading">DetroitLive!</string>
+    <string name="LOG_TAG">LOG_TAG</string>
+
+
+    <!--No Internet Activity-->
+    <string name="label_no_internet_message">Sorry friend, you gotta be connected to the internet for this! </string>
+    <string name="try_later_message">Maybe try again when you have service?</string>
+    <string name="no_internet_refresh_message">Try Again!</string>
+
+    <!--Main and ViewPager Activity -->
+    <string name="Ticket_Title">Get Tickets Now</string>
+    <string name="Venue">Default Venue</string>
+    <string name="Address">Default Address</string>
+    <string name="City">Default City</string>
+    <string name="ZipCode">Default Zipcode</string>
+    <string name="VenueURL">DefaultVenueURL.com</string>
+    <string name="Artist1">Default Artist Headliner</string>
+    <string name="Artist2">Default Artist 2</string>
+    <string name="Artist3">Default Artist 3</string>
+    <string name="TicketURL:">DefaultTicektingURL.com</string>
+    <string name="Date">12/25</string>
+    <string name="Time">8:00</string>
+
+
+    <!--Add Concert Activity-->
+    <string name="Featuring_Title">Featuring: </string>
+    <string name="Share_Title">Share music you\'re stoked about:</string>
+    <string name="Date_Submit">Date and Time of Concert:</string>
+    <string name="Venue_Submit">Name of Venue:</string>
+    <string name="Address_Submit">Address of Venue:</string>
+    <string name="City_Submit">City:</string>
+    <string name="Zipcode_Submit">Zipcode:</string>
+    <string name="Venue_URL_Submit">Website of Venue (Optional):</string>
+    <string name="Artist_Submit">Headlining Performer:</string>
+    <string name="Artist_2_Submit">FEAT (If Applicable):</string>
+    <string name="Artist_3_Submit">FEAT (If Applicable):</string>
+    <string name="Ticket_URl_Submit">Link to Purchase Tickets:</string>
+    <string name="Submit_Button">SUBMIT</string>
+    <string name="Hint_Date">Date</string>
+    <string name="Hint_Time">Time</string>
+
+</resources>

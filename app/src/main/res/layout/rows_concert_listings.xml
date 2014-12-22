@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_black"
+    android:padding="15dp"
+    android:orientation="vertical"
+    >
+
+<!--Kate go back and add a drawable shape to give these a frame!-->
+
+    <!--Go back and turn those color placeholders into actual colors! -->
+
+    <TextView
+        android:id="@+id/TextView_Artist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/Artist1"
+        android:textColor="@color/pink"
+        android:textSize="30dp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+
+    <TextView
+        android:id="@+id/TextView_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_Artist1"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/Date"
+        android:textColor="@color/cream"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/TextView_Venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_Date"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/Venue"
+        android:textColor="@color/cream"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/TextView_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_Date"
+        android:layout_toRightOf="@id/TextView_Venue"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/City"
+        android:textColor="@color/cream"
+        android:textSize="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+
+
+</RelativeLayout>

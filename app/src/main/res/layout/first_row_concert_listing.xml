@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/featured_concert"
+    >
+
+    <!--Go back and turn those color placeholders into actual colors! -->
+
+    <TextView
+        android:id="@+id/TextView_Artist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/Artist1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_pink"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/TextView_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Date"
+        android:textColor="@color/cream"
+        android:textSize="25dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/TextView_Venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/TextView_City"
+        android:paddingRight="10dp"
+        android:text="@string/Venue"
+        android:textColor="@color/cream"
+        android:textSize="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/TextView_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="20dp"
+        android:text="@string/City"
+        android:textColor="@color/cream"
+        android:textSize="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+
+</RelativeLayout>
