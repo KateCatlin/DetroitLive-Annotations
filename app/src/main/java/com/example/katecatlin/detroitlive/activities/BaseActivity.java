@@ -31,7 +31,7 @@ public abstract class BaseActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setActionBar();
+//        setActionBar();
     }
 
     @AfterViews
@@ -90,9 +90,9 @@ public abstract class BaseActivity extends ActionBarActivity {
     public void setActionBar() {
 
         ActionBar actionBar = getActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setTitle(R.string.Heading);
+//        actionBar.setHomeButtonEnabled(true);
+//        actionBar.setDisplayShowHomeEnabled(true);
+//        actionBar.setTitle(R.string.Heading);
 
         actionBar.show();
     }

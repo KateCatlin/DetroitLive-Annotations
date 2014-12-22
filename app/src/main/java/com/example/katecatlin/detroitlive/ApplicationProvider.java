@@ -12,7 +12,7 @@ public class ApplicationProvider {
         public long getCurrentTimeMillis();
     }
 
-    private static ApplicationHelper helper;
+    public static ApplicationHelper helper;
 
     public static ApplicationHelper getApplicationHelper() {
         return (ApplicationHelper) getHelper();

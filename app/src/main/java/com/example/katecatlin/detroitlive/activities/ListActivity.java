@@ -16,7 +16,7 @@ import org.androidannotations.annotations.EActivity;
  */
 
 @EActivity(R.layout.activity_base)
-public abstract class ListActivity extends BaseActivity {
+public class ListActivity extends BaseActivity {
 
     @AfterViews
     public void loadConcertListFragment () {
