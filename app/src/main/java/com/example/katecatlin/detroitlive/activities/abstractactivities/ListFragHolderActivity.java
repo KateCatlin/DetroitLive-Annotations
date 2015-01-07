@@ -25,7 +25,7 @@ public class ListFragHolderActivity extends Activity implements FragmentControll
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         setActionBar();
-        loadConcertListFragment();
+//        loadConcertListFragment();
     }
 
 
@@ -61,24 +61,24 @@ public class ListFragHolderActivity extends Activity implements FragmentControll
     }
 
 
-    private void loadConcertListFragment () {
-
-        Fragment clf = getFragmentManager().findFragmentByTag(ConcertListFragment.FRAG_TAG);
-        if(clf != null) {
-            Log.d("MainActivity", "found concert list fragment");
-            getFragmentManager().beginTransaction().show(clf).commit();
-            return;
-        }
-
-        ConcertListFragment concertListFragment = new ConcertListFragment();
-
-        int result = getFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainer, concertListFragment, ConcertListFragment.FRAG_TAG)
-                .commit();
-
-
-        Log.d("MainActivity", "load concert list fragment = " + result);
-    }
+//    private void loadConcertListFragment () {
+//
+//        Fragment clf = getFragmentManager().findFragmentByTag(ConcertListFragment.FRAG_TAG);
+//        if(clf != null) {
+//            Log.d("MainActivity", "found concert list fragment");
+//            getFragmentManager().beginTransaction().show(clf).commit();
+//            return;
+//        }
+//
+//        ConcertListFragment concertListFragment = new ConcertListFragment();
+//
+//        int result = getFragmentManager().beginTransaction()
+//                .replace(R.id.fragmentContainer, concertListFragment, ConcertListFragment.FRAG_TAG)
+//                .commit();
+//
+//
+//        Log.d("MainActivity", "load concert list fragment = " + result);
+//    }
 
     public void setActionBar() {
 

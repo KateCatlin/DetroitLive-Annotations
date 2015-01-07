@@ -1,19 +1,19 @@
-package com.example.katecatlin.detroitlive.activities;
+package com.example.katecatlin.detroitlive.activities.abstractactivities;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.katecatlin.detroitlive.R;
+import com.example.katecatlin.detroitlive.activities.AddConcertActivity_;
+import com.example.katecatlin.detroitlive.activities.MainActivity_;
+import com.example.katecatlin.detroitlive.activities.NoInternetActivity_;
 import com.example.katecatlin.detroitlive.utils.ActivityUtil;
 import com.example.katecatlin.detroitlive.utils.NetworkUtil;
 
@@ -64,20 +64,20 @@ public abstract class BaseActivity extends ActionBarActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-    @UiThread
-    public void showProgressDialog(String message) {
-        if (!ActivityUtil.isActivityValid(this)) {
-            return;
-        }
-
-        if (progressDialog == null) {
-            progressDialog = new ProgressDialog(this);
-            progressDialog.setCancelable(false);
-        }
-
-        progressDialog.setMessage(message);
-        progressDialog.show();
-    }
+//    @UiThread
+//    public void showProgressDialog(String message) {
+//        if (!ActivityUtil.isActivityValid(this)) {
+//            return;
+//        }
+//
+//        if (progressDialog == null) {
+//            progressDialog = new ProgressDialog(this);
+//            progressDialog.setCancelable(false);
+//        }
+//
+//        progressDialog.setMessage(message);
+//        progressDialog.show();
+//    }
 
 
     @Override
@@ -98,7 +98,7 @@ public abstract class BaseActivity extends ActionBarActivity {
     }
 
     public void goHome () {
-        Intent goHome = new Intent(this, ListActivity.class);
+        Intent goHome = new Intent(this, MainActivity_.class);
         goHome.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(goHome);
         overridePendingTransition(0, R.anim.slide_in_right);
@@ -121,7 +121,7 @@ public abstract class BaseActivity extends ActionBarActivity {
                 goHome();
                 break;
             case R.id.action_new_concert:
-                Intent addConcertIntent = new Intent (this, AddConcertActivity.class );
+                Intent addConcertIntent = new Intent (this, AddConcertActivity_.class );
                 startActivity(addConcertIntent);
                 overridePendingTransition(0, R.anim.slide_in_left);
                 break;

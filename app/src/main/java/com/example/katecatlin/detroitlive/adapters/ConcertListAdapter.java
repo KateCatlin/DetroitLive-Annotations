@@ -80,7 +80,7 @@ public class ConcertListAdapter extends ArrayAdapter<Concert> {
     }
 
 
-    private static class ViewHolder {
+    public static class ViewHolder {
 
         private TextView textView_artist1;
         private TextView textView_date;

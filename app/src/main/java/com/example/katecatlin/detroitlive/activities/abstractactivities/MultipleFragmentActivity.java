@@ -4,7 +4,6 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 
 import com.example.katecatlin.detroitlive.R;
-import com.example.katecatlin.detroitlive.activities.BaseActivity;
 
 import org.androidannotations.annotations.EActivity;
 
