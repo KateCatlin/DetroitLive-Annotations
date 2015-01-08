@@ -1,11 +1,15 @@
 package com.example.katecatlin.detroitlive.fragments;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.katecatlin.detroitlive.R;
+import com.example.katecatlin.detroitlive.activities.abstractactivities.ConcertPagerActivity;
+import com.example.katecatlin.detroitlive.activities.abstractactivities.ConcertPagerActivity_;
 import com.example.katecatlin.detroitlive.adapters.ConcertListAdapter;
 import com.example.katecatlin.detroitlive.interfaces.MasterApiRequestCallback;
 import com.example.katecatlin.detroitlive.models.Concert;
@@ -15,6 +19,7 @@ import com.example.katecatlin.detroitlive.requests.MasterRequest;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ItemClick;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
@@ -27,12 +32,6 @@ import java.util.List;
 public class ConcertListFragment extends Fragment implements MasterApiRequestCallback {
     private ArrayList<Concert> sortedConcerts;
 
-
-//    public static ConcertListFragment newInstance() {
-//        ConcertListFragment fragment = new ConcertListFragment_();
-//        return fragment;
-//    }
-
     @ViewById (R.id.concert_list)
     ListView concertList;
 
@@ -43,7 +42,6 @@ public class ConcertListFragment extends Fragment implements MasterApiRequestCal
 
     @AfterViews
     public void attachAdapter () {
-        Log.d("LOG_TAG", "ConcertList still null? 1 " + concertList);
         concertListAdapter = new ConcertListAdapter(getActivity());
         concertList.setAdapter(concertListAdapter);
         refreshConcerts();
@@ -77,5 +75,16 @@ public class ConcertListFragment extends Fragment implements MasterApiRequestCal
     @Override
     public void onError() {
         Toast.makeText(getActivity(), "Error loading concerts, press back and try again!", Toast.LENGTH_LONG).show();
+    }
+
+    @ItemClick
+    void concertListItemClicked(int position) {
+        Intent concertPagerIntent = new Intent(getActivity(), ConcertPagerActivity_.class);
+        Bundle dataBundle = new Bundle();
+        dataBundle.putParcelableArrayList("data", sortedConcerts);
+        dataBundle.putInt("position", position);
+
+        concertPagerIntent.putExtras(dataBundle);
+        startActivity(concertPagerIntent);
     }
 }

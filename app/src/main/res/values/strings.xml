@@ -6,13 +6,12 @@
     <string name="Heading">DetroitLive!</string>
     <string name="LOG_TAG">LOG_TAG</string>
 
-
-    <!--No Internet Activity-->
+    <!-- No Internet Activity -->
     <string name="label_no_internet_message">Sorry friend, you gotta be connected to the internet for this! </string>
     <string name="try_later_message">Maybe try again when you have service?</string>
     <string name="no_internet_refresh_message">Try Again!</string>
 
-    <!--Main and ViewPager Activity -->
+    <!-- Main and ViewPager Activity -->
     <string name="Ticket_Title">Get Tickets Now</string>
     <string name="Venue">Default Venue</string>
     <string name="Address">Default Address</string>
@@ -26,8 +25,7 @@
     <string name="Date">12/25</string>
     <string name="Time">8:00</string>
 
-
-    <!--Add Concert Activity-->
+    <!-- Add Concert Activity -->
     <string name="Featuring_Title">Featuring: </string>
     <string name="Share_Title">Share music you\'re stoked about:</string>
     <string name="Date_Submit">Date and Time of Concert:</string>
@@ -43,5 +41,7 @@
     <string name="Submit_Button">SUBMIT</string>
     <string name="Hint_Date">Date</string>
     <string name="Hint_Time">Time</string>
+    <string name="title_activity_concert_pager">ConcertPagerActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

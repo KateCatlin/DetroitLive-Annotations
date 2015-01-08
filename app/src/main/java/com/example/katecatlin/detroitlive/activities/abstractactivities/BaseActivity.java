@@ -64,20 +64,20 @@ public abstract class BaseActivity extends ActionBarActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-//    @UiThread
-//    public void showProgressDialog(String message) {
-//        if (!ActivityUtil.isActivityValid(this)) {
-//            return;
-//        }
-//
-//        if (progressDialog == null) {
-//            progressDialog = new ProgressDialog(this);
-//            progressDialog.setCancelable(false);
-//        }
-//
-//        progressDialog.setMessage(message);
-//        progressDialog.show();
-//    }
+    @UiThread
+    public void showProgressDialog(String message) {
+        if (!ActivityUtil.isActivityValid(this)) {
+            return;
+        }
+
+        if (progressDialog == null) {
+            progressDialog = new ProgressDialog(this);
+            progressDialog.setCancelable(false);
+        }
+
+        progressDialog.setMessage(message);
+        progressDialog.show();
+    }
 
 
     @Override
